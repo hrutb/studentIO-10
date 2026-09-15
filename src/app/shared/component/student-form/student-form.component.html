@@ -1,6 +1,6 @@
 <div class="card">
-   <div class="card-header">
-                <h3>Student Form</h3>
+   <div class="card-header bg-primary text-light">
+                <h1>Student Form</h1>
    </div>
    <form action="" #stdForm="ngForm">
     <div class="card-body">
@@ -34,8 +34,8 @@
           </div>
 
           <div class="card-footer">
-              <button mat-stroked-button  *ngIf="IsInEditMode">Add Student</button>
-               <button mat-stroked-button  *ngIf="!IsInEditMode">Update Student</button>
+              <button mat-stroked-button color="primary"  *ngIf="!IsInEditMode">Add Student</button>
+               <button mat-stroked-button color="warn"  *ngIf="IsInEditMode">Update Student</button>
           </div>
 
         </form>
