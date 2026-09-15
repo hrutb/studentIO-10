@@ -1,0 +1,35 @@
+<div class="card">
+   <div class="card-header">Student table</div>
+   <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered">
+         <thead>
+            <tr>
+               <th>Sr.no</th>
+               <th>Full name</th>
+               <th>Email</th>
+               <th>Contact</th>
+               <th>Is Active</th>
+               <th>City</th>
+               <th>Edit</th>
+               <th>Remove</th>
+            </tr>
+         </thead>
+          <tbody>
+              <tr *ngFor='let std of getStudent; index as i '>
+                 <td>{{i+1}}</td>
+                 <td>{{std.fname}} {{std.lname}}</td>
+                 <td>{{std.email}}</td>
+                 <td>{{std.contact}}</td>
+                 <td>{{std.isActive}}</td>
+                 <td>{{std.city}}</td>
+                 <td><button mat-mini-fab color="primary"><mat-icon>edit</mat-icon></button></td>
+                 <td><button mat-mini-fab color="warn"><mat-icon>delete</mat-icon></button></td>
+              </tr>
+          </tbody>
+
+       </table>
+
+    </div>
+   </div>
+</div>

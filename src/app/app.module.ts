@@ -2,13 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StudentDashboardComponent } from './shared/component/student-dashboard/student-dashboard.component';
+import { StudentFormComponent } from './shared/component/student-form/student-form.component';
+import { StudentTableComponent } from './shared/component/student-table/student-table.component';
+import { MaterialModule } from './shared/module/material.model';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StudentDashboardComponent,
+    StudentFormComponent,
+    StudentTableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule ,
+    MaterialModule ,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

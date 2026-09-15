@@ -1,0 +1,42 @@
+<div class="card">
+   <div class="card-header">
+                <h3>Student Form</h3>
+   </div>
+   <form action="" #stdForm="ngForm">
+    <div class="card-body">
+            <div class="form-group">
+               <label for="">First name</label>
+               <input type="text" class="form-control" name="fname" ngModel>
+            </div>
+              <div class="form-group">
+               <label for="">Last name</label>
+               <input type="text" class="form-control" name="lname" ngModel>
+            </div>
+             <div class="form-group">
+               <label for="">Email</label>
+               <input type="text" class="form-control" name="email" ngModel>
+            </div>
+
+            <div class="form-group">
+               <label for="">Contact</label>
+               <input type="text" class="form-control" name="contact" ngModel>
+            </div>
+
+             <div class="form-group">
+               <label for="">Is Active</label>
+               <input type="text" class="form-control" name="isActive" ngModel>
+            </div>
+
+             <div class="form-group">
+               <label for=""></label>
+               <input type="text" class="form-control" name="email" ngModel>
+            </div>
+          </div>
+
+          <div class="card-footer">
+              <button mat-stroked-button  *ngIf="IsInEditMode">Add Student</button>
+               <button mat-stroked-button  *ngIf="!IsInEditMode">Update Student</button>
+          </div>
+
+        </form>
+</div>
